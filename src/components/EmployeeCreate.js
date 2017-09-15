@@ -21,6 +21,11 @@ class EmployeeCreate extends Component {
 
         <CardSection>
         </CardSection>
+
+        <CardSection>
+          <Button> Save
+          </Button>
+        </CardSection>
       </Card>
       );
   }
