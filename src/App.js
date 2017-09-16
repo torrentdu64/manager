@@ -11,14 +11,14 @@ class App extends Component {
   componentWillMount() {
 
     const config = {
-      apiKey:'AIzaSyAVypQZvNpx_81SUneZqHnbtgtdQy7Z-U0',
-      authDomain:'manager-cc11c.firebaseapp.com',
-      databaseURL:'https://manager-cc11c.firebaseio.com',
-      projectId:'manager-cc11c',
-      storageBucket:'manager-cc11c.appspot.com',
-      messagingSenderId:'217705470606'
-    };
-      firebase.initializeApp(config);
+    apiKey: "AIzaSyBGltpKYhHXsRNFTHM_I8Zl1ON34oYS3ZI",
+    authDomain: "auth-4ce11.firebaseapp.com",
+    databaseURL: "https://auth-4ce11.firebaseio.com",
+    projectId: "auth-4ce11",
+    storageBucket: "auth-4ce11.appspot.com",
+    messagingSenderId: "803019534852"
+  };
+  firebase.initializeApp(config);
   }
 
   render(){
