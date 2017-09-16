@@ -5,6 +5,7 @@ import {Button} from './Button';
 
 
 const Confirm = ({children, visible, onAccept, onDecline}) => {
+  const { containerStyle, textStyle, cardSectionStyle} = styles;
   return (
     <Modal
     visible={visible}
@@ -12,9 +13,9 @@ const Confirm = ({children, visible, onAccept, onDecline}) => {
     animateType="slide"
     onRequestClose={ () => {}}
     >
-      <View>
-        <CardSection>
-          <Text>{children}
+      <View style={containerStyle}>
+        <CardSection style={cardSectionStyle}>
+          <Text style={textStyle}>{children}
           </Text>
         </CardSection>
         <CardSection>
@@ -28,5 +29,26 @@ const Confirm = ({children, visible, onAccept, onDecline}) => {
     );
 
 };
+
+const styles = {
+  cardSectionStyle:{
+      justifyContent: 'center'
+  },
+  textStyle: {
+      flex: 1,
+      fontSize: 18,
+      alignHeight: 40,
+      textAlign: 'center'
+
+
+  },
+  containerStyle:{
+    backgroundColor: 'rgba(0,0,0,0.75)',
+    position: 'relative',
+    flex:1,
+    justifyContent: 'center'
+
+  }
+}
 
 export  {Confirm};
